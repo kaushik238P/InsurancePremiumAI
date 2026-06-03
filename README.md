@@ -1,219 +1,114 @@
-# InsurancePremiumAI
+# 🛡️ InsurancePremiumAI
 
-An end-to-end Machine Learning application for predicting insurance premiums using XGBoost, FastAPI, Streamlit, Docker, and Render.
+An end-to-end Machine Learning application that predicts insurance premium categories using **XGBoost**, **FastAPI**, **Streamlit**, **Docker**, and **Render**.
 
-## Live Demo
+## 🚀 Live Demo
 
-### Frontend
-
+**Web Application**
 https://insurancepremiumai-frontend.onrender.com
 
-### API
-
-https://insurancepremiumai-api.onrender.com
-
-### API Documentation
-
+**API Documentation**
 https://insurancepremiumai-api.onrender.com/docs
 
 ---
 
-## Project Overview
+## 📌 Overview
 
-InsurancePremiumAI predicts insurance premiums based on customer demographics, lifestyle factors, and financial information.
+InsurancePremiumAI predicts insurance premium categories based on customer demographics, lifestyle factors, and financial information.
 
-The project demonstrates a complete ML deployment workflow:
-
-* Data Analysis and Feature Engineering
-* Model Training using XGBoost
-* REST API Development using FastAPI
-* Interactive Frontend using Streamlit
-* Containerization using Docker
-* Multi-container orchestration using Docker Compose
-* Docker Hub image publishing
-* Cloud deployment using Render
+The project demonstrates a complete ML deployment workflow, including model development, API creation, containerization, cloud deployment, and interactive visualization.
 
 ---
 
-## Architecture
+## 🛠️ Tech Stack
+
+* Python
+* XGBoost
+* Pandas & NumPy
+* FastAPI
+* Streamlit
+* Plotly
+* Docker & Docker Compose
+* GitHub
+* Render
+
+---
+
+## 🏗️ Architecture
 
 ```text
 User
- │
- ▼
-Streamlit Frontend
- │
- ▼
-FastAPI Backend
- │
- ▼
+ ↓
+Streamlit Dashboard
+ ↓
+FastAPI REST API
+ ↓
 Feature Engineering
- │
- ▼
+ ↓
 XGBoost Model
- │
- ▼
+ ↓
 Premium Prediction
 ```
 
 ---
 
-## Tech Stack
+## ✨ Features
 
-### Machine Learning
-
-* Python
-* Pandas
-* NumPy
-* Scikit-Learn
-* XGBoost
-
-### Backend
-
-* FastAPI
-* Uvicorn
-* Pydantic
-
-### Frontend
-
-* Streamlit
-* Plotly
-
-### Deployment
-
-* Docker
-* Docker Compose
-* Docker Hub
-* Render
+* Insurance Premium Prediction
+* Real-Time Inference
+* Confidence Score Analysis
+* Interactive Dashboard
+* REST API Integration
+* Dockerized Deployment
+* Cloud Hosted on Render
 
 ---
 
-## Project Structure
+## 📸 Screenshots
 
-```text
-InsurancePremiumAI
-│
-├── app.py
-├── frontend.py
-├── Dockerfile.api
-├── Dockerfile.streamlit
-├── docker-compose.yml
-├── requirements-api.txt
-├── requirements-frontend.txt
-│
-├── config/
-├── data/
-├── model/
-├── schema/
-├── services/
-└── logs/
-```
+### Dashboard
+
+<img src="screenshots/dashboard.png" width="900">
+
+### Prediction Result
+
+<img src="screenshots/prediction.png" width="900">
+
+### Risk Analysis
+
+<img src="screenshots/risk-analysis.png" width="900">
+
+### API Documentation
+
+<img src="screenshots/api-docs.png" width="900">
 
 ---
 
-## Docker Images
-
-### Backend
-
-docker pull kaushik238p/insurancepremiumai-api:latest
-
-### Frontend
-
-docker pull kaushik238p/insurancepremiumai-frontend:latest
-
----
-
-## Running Locally
-
-### Clone Repository
+## ⚙️ Run Locally
 
 ```bash
 git clone https://github.com/kaushik238P/InsurancePremiumAI.git
+
 cd InsurancePremiumAI
-```
 
-### Create Virtual Environment
-
-```bash
-python -m venv .venv
-```
-
-### Activate Environment
-
-Windows:
-
-```bash
-.venv\Scripts\activate
-```
-
-### Install Dependencies
-
-```bash
-pip install -r requirements-api.txt
-pip install -r requirements-frontend.txt
-```
-
-### Run FastAPI
-
-```bash
-uvicorn app:app --reload
-```
-
-### Run Streamlit
-
-```bash
-streamlit run frontend.py
+docker compose up --build
 ```
 
 ---
 
-## Running with Docker
+## 🌐 Deployment
 
-### Build Containers
-
-```bash
-docker compose build
-```
-
-### Start Services
-
-```bash
-docker compose up
-```
+| Service     | URL                                              |
+| ----------- | ------------------------------------------------ |
+| Frontend    | https://insurancepremiumai-frontend.onrender.com |
+| Backend API | https://insurancepremiumai-api.onrender.com      |
+| API Docs    | https://insurancepremiumai-api.onrender.com/docs |
 
 ---
 
-## Features
+## 👨‍💻 Author
 
-* Insurance Premium Prediction
-* Real-Time API Inference
-* Interactive Streamlit Dashboard
-* Dockerized Deployment
-* Public Cloud Hosting
-* Swagger API Documentation
+**Kaushik Bairwa**
+B.Tech, SVNIT Surat
 
----
-
-## Deployment
-
-### Backend
-
-Hosted on Render
-
-https://insurancepremiumai-api.onrender.com
-
-### Frontend
-
-Hosted on Render
-
-https://insurancepremiumai-frontend.onrender.com
-
----
-
-## Author
-
-Kaushik Bairwa
-
-SVNIT Surat
-
-Machine Learning | Backend Development | MLOps | GenAI
+⭐ If you found this project useful, consider starring the repository.
