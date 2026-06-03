@@ -1,0 +1,31 @@
+services:
+
+  api:
+    image: insurancepremiumai-api
+    build:
+      context: .
+      dockerfile: Dockerfile.api
+
+    container_name: insurancepremiumai-api
+
+    ports:
+      - "8000:8000"
+
+  frontend:
+    image: insurancepremiumai-frontend
+    build:
+      context: .
+      dockerfile: Dockerfile.streamlit
+
+   
+
+    container_name: insurancepremiumai-ui
+
+    ports:
+      - "8501:8501"
+
+    environment:
+      - API_URL=http://api:8000/predict
+
+    depends_on:
+      - api
